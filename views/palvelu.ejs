@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Demo 7: NodeJS ja MySql</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+
+    <h1>Demo 7: NodeJS ja MySql</h1>
+
+    <h2 class="mb-3">Palvelun tiedot</h2>
+
+    <form method="POST" action="/tallenna/">
+
+    <div class="form-group">
+        <label for="nimi">Nimi:</label>
+        <input class="form-control col-lg-6" type="text" name="nimi" id="nimi" value="<%=palvelu.nimi%>">
+    </div>
+
+    <div class="form-group">
+        <label for="hinta">Hinta:</label>
+        <input class="form-control col-lg-6" type="text" name="hinta" id="hinta" value="<%=palvelu.hinta.toFixed(2)%>">
+    </div>
+
+    <input type="hidden" name="id" value="<%=palvelu.id%>">
+
+    <input class="btn btn-primary" type="submit" value="Tallenna muutokset">
+    <a class="btn btn-secondary" href="/">Peruuta</a>
+
+    </form>
+
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Allun autokorjaamo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+
+    <h1>Allun autokorjaamo</h1>
+
+    <h2 class="mb-3">Palveluhinnasto</h2>
+
+    <table class="table table-bordered">
+        <tbody>
+    
+    <% palvelut.forEach((palvelu) => { %>
+
+        <tr>
+            <td><%=palvelu.nimi%></td>
+            <td><%=palvelu.hinta.toFixed(2)%> e</td>
+            <td>
+            <a href="/muokkaa/<%=palvelu.id%>">Muokkaa</a>
+            </td>
+        </tr>
+
+    <% }); %>
+
+        </tbody>
+    </table>
+
+    </div>
+
+</body>
+</html>
