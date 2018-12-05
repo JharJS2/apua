@@ -1,10 +1,11 @@
 const mysql = require("mysql");
 
 const yhteys = mysql.createConnection({
-                                        "host" : "localhost",
-                                        "user" : "root",
-                                        "password" : "",
-                                        "database" : "autokorjaamo"
+                                        "host" : "127.0.0.1",
+                                        "user" : "azure",
+                                        "password" : "6#vWHD_$",
+                                        "database" : "autokorjaamo",
+                                        "port" : "49461"
                                       });
 
 yhteys.connect((err) => {
