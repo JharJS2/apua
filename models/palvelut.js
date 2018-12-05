@@ -5,7 +5,7 @@ const yhteys = mysql.createConnection({
                                         "user" : "azure",
                                         "password" : "6#vWHD_$",
                                         "database" : "autokorjaamo",
-                                        "port" : "49461"
+                                        "port" : 49461
                                       });
 
 yhteys.connect((err) => {
